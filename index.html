@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retina OCT Quiz - AMD Assessment Training</title>
+    <meta name="description" content="Professional medical quiz for retinal OCT image interpretation and AMD staging assessment">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <line x1="12" y1="2" x2="12" y2="6"/>
+                    <line x1="12" y1="18" x2="12" y2="22"/>
+                    <line x1="2" y1="12" x2="6" y2="12"/>
+                    <line x1="18" y1="12" x2="22" y2="12"/>
+                </svg>
+                <span class="logo-text">Retina OCT Quiz</span>
+            </div>
+            <div class="header-stats" id="headerStats">
+                <span class="stat-badge">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value" id="currentScore">0</span>/<span id="totalAnswered">0</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Start Screen -->
+        <section class="screen start-screen" id="startScreen">
+            <div class="start-card">
+                <div class="start-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="24" cy="24" r="20"/>
+                        <circle cx="24" cy="24" r="8"/>
+                        <path d="M24 4v8M24 36v8M4 24h8M36 24h8"/>
+                    </svg>
+                </div>
+                <h1 class="start-title">Retinal OCT Assessment</h1>
+                <p class="start-subtitle">Age-Related Macular Degeneration (AMD) Quiz</p>
+                <p class="start-description">
+                    Test your knowledge in interpreting OCT B-scans for AMD diagnosis.
+                    Questions cover biomarker identification, disease staging, fluid assessment,
+                    and clinical management decisions.
+                </p>
+
+                <div class="quiz-options">
+                    <div class="option-group">
+                        <label class="option-label">Number of Questions</label>
+                        <div class="option-buttons" id="questionCountOptions">
+                            <button class="option-btn" data-value="5">5</button>
+                            <button class="option-btn active" data-value="10">10</button>
+                            <button class="option-btn" data-value="15">15</button>
+                            <button class="option-btn" data-value="all">All</button>
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <label class="option-label">Difficulty Filter</label>
+                        <div class="option-buttons" id="difficultyOptions">
+                            <button class="option-btn active" data-value="all">All</button>
+                            <button class="option-btn" data-value="basic">Basic</button>
+                            <button class="option-btn" data-value="intermediate">Intermediate</button>
+                            <button class="option-btn" data-value="advanced">Advanced</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-large" id="startQuizBtn">
+                    Start Quiz
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+
+                <div class="start-info">
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18"/>
+                        </svg>
+                        <span>OCT B-scan images</span>
+                    </div>
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"/>
+                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                        </svg>
+                        <span>Instant feedback</span>
+                    </div>
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20h9"/>
+                            <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                        <span>Detailed explanations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section class="screen quiz-screen hidden" id="quizScreen">
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span class="progress-text">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span></span>
+                    <span class="progress-difficulty" id="questionDifficulty">Basic</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 10%"></div>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="quiz-card">
+                <!-- Image Section -->
+                <div class="image-section">
+                    <div class="image-container">
+                        <img id="questionImage" src="" alt="OCT B-scan image" class="oct-image">
+                        <button class="zoom-btn" id="zoomBtn" title="Click to enlarge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="M21 21l-4.35-4.35"/>
+                                <path d="M11 8v6M8 11h6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="image-meta">
+                        <span class="meta-badge" id="amdStage">AMD Stage</span>
+                        <span class="meta-topic" id="questionTopic">Topic</span>
+                    </div>
+                </div>
+
+                <!-- Question Section -->
+                <div class="question-section">
+                    <div class="question-type-badge" id="questionTypeBadge">Single Choice</div>
+                    <h2 class="question-text" id="questionText">Loading question...</h2>
+
+                    <div class="choices-container" id="choicesContainer">
+                        <!-- Choices will be inserted here -->
+                    </div>
+
+                    <div class="feedback-container hidden" id="feedbackContainer">
+                        <div class="feedback-header" id="feedbackHeader">
+                            <svg class="feedback-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                            <span class="feedback-title">Correct!</span>
+                        </div>
+                        <div class="feedback-explanation" id="feedbackExplanation">
+                            <!-- Explanation will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary" id="submitBtn" disabled>
+                            Submit Answer
+                        </button>
+                        <button class="btn btn-primary hidden" id="nextBtn">
+                            Next Question
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section class="screen results-screen hidden" id="resultsScreen">
+            <div class="results-card">
+                <div class="results-header">
+                    <div class="results-icon" id="resultsIcon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M16 24l6 6 12-12"/>
+                        </svg>
+                    </div>
+                    <h1 class="results-title">Quiz Complete!</h1>
+                    <p class="results-subtitle" id="resultsMessage">Great performance!</p>
+                </div>
+
+                <div class="score-display">
+                    <div class="score-circle">
+                        <svg class="score-ring" viewBox="0 0 120 120">
+                            <circle class="score-ring-bg" cx="60" cy="60" r="54"/>
+                            <circle class="score-ring-fill" id="scoreRing" cx="60" cy="60" r="54"/>
+                        </svg>
+                        <div class="score-text">
+                            <span class="score-number" id="finalScore">0</span>
+                            <span class="score-percent">%</span>
+                        </div>
+                    </div>
+                    <div class="score-details">
+                        <div class="score-detail">
+                            <span class="detail-value correct" id="correctCount">0</span>
+                            <span class="detail-label">Correct</span>
+                        </div>
+                        <div class="score-detail">
+                            <span class="detail-value incorrect" id="incorrectCount">0</span>
+                            <span class="detail-label">Incorrect</span>
+                        </div>
+                        <div class="score-detail">
+                            <span class="detail-value" id="totalCount">0</span>
+                            <span class="detail-label">Total</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance-breakdown">
+                    <h3 class="breakdown-title">Performance by Difficulty</h3>
+                    <div class="breakdown-bars" id="breakdownBars">
+                        <!-- Breakdown bars will be inserted here -->
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-primary btn-large" id="restartBtn">
+                        <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 4v6h6"/>
+                            <path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+                        </svg>
+                        Start New Quiz
+                    </button>
+                    <button class="btn btn-secondary" id="reviewBtn">
+                        Review Answers
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Screen -->
+        <section class="screen review-screen hidden" id="reviewScreen">
+            <div class="review-header">
+                <h1 class="review-title">Answer Review</h1>
+                <button class="btn btn-secondary" id="backToResultsBtn">
+                    <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Results
+                </button>
+            </div>
+            <div class="review-list" id="reviewList">
+                <!-- Review items will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="modal hidden" id="imageModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <img id="modalImage" src="" alt="Enlarged OCT image" class="modal-image">
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <svg class="spinner" viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="20" fill="none" stroke-width="4"/>
+            </svg>
+            <span class="loading-text">Loading questions...</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

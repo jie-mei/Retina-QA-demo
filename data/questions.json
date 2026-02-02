@@ -1,0 +1,1907 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-02T12:35:18.920912",
+    "model": "gpt-5.2",
+    "total_images": 5,
+    "total_questions": 50,
+    "workers": 4,
+    "status": "in_progress"
+  },
+  "exams": [
+    {
+      "image_id": "11-17051433-25-JMTCWVPJKJLMJDKPBHMJUBDON+XRKABHXCJ",
+      "image_file": "image_002.png",
+      "image_path_original": "dataset/processed_images/11-17051433-25-JMTCWVPJKJLMJDKPBHMJUBDON+XRKABHXCJEVRQZSDFEGVZIOJAPXAIAROVDQAM+OJYKFL.png",
+      "amd_stage": "LateWet",
+      "biomarkers": [
+        "hypertransmission",
+        "drusenoid PED",
+        "iRORA",
+        "subretinal fluid",
+        "intraretinal fluid",
+        "RPE elevation",
+        "subretinal hyperreflective material",
+        "PED",
+        "hyperreflective foci",
+        "cRORA",
+        "large drusen"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question_type": "single",
+          "question_text": "Which OCT feature best describes the drusen pattern in this scan?",
+          "difficulty": "basic",
+          "topic": "drusen",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Confluent medium-to-large drusen causing undulating RPE elevations",
+              "is_correct": true,
+              "reason": "The scan is described as showing predominantly medium-to-large drusen with confluence, producing irregular/undulating elevations of the RPE–Bruch’s complex."
+            },
+            {
+              "id": "B",
+              "text": "Small hard drusen appearing as discrete, tiny RPE bumps without confluence",
+              "is_correct": false,
+              "reason": "Hard drusen are typically small, discrete elevations; this scan emphasizes confluence and medium-to-large lesions rather than isolated tiny bumps."
+            },
+            {
+              "id": "C",
+              "text": "Reticular pseudodrusen (subretinal drusenoid deposits) located above the RPE",
+              "is_correct": false,
+              "reason": "Reticular pseudodrusen are located in the subretinal space (above the RPE) and have a different OCT appearance than sub-RPE drusen/RPE elevations."
+            },
+            {
+              "id": "D",
+              "text": "No drusen; the RPE–Bruch’s complex is flat and smooth",
+              "is_correct": false,
+              "reason": "The report explicitly notes drusen with irregular RPE elevations and confluence."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question_type": "single",
+          "question_text": "What is the most likely type of pigment epithelial detachment (PED) described on this OCT B-scan?",
+          "difficulty": "basic",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Drusenoid PED",
+              "is_correct": true,
+              "reason": "A drusenoid PED is characterized by a broad RPE elevation with heterogeneous sub-RPE reflectivity, consistent with the report’s description."
+            },
+            {
+              "id": "B",
+              "text": "Serous PED",
+              "is_correct": false,
+              "reason": "Serous PED typically shows an optically empty (hyporeflective) sub-RPE space; the report notes heterogeneous reflectivity rather than a clear empty space."
+            },
+            {
+              "id": "C",
+              "text": "Fibrovascular PED",
+              "is_correct": false,
+              "reason": "Fibrovascular PED is usually associated with irregular hyperreflective material under the RPE and often other neovascular signs; the report states no convincing fibrovascular features on this scan."
+            },
+            {
+              "id": "D",
+              "text": "Hemorrhagic PED",
+              "is_correct": false,
+              "reason": "Hemorrhagic PED would show dense hyperreflective material consistent with blood; this is not described."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question_type": "single",
+          "question_text": "Which fluid finding is present on this OCT scan?",
+          "difficulty": "basic",
+          "topic": "fluid assessment",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Subretinal fluid (SRF)",
+              "is_correct": false,
+              "reason": "SRF would appear as a hyporeflective space between the neurosensory retina and RPE; the report states SRF is absent."
+            },
+            {
+              "id": "B",
+              "text": "Intraretinal fluid (IRF)",
+              "is_correct": false,
+              "reason": "IRF typically appears as cystoid hyporeflective intraretinal spaces; the report states IRF is absent."
+            },
+            {
+              "id": "C",
+              "text": "Both SRF and IRF",
+              "is_correct": false,
+              "reason": "Neither SRF nor IRF is identified on this scan."
+            },
+            {
+              "id": "D",
+              "text": "No SRF or IRF",
+              "is_correct": true,
+              "reason": "The analysis explicitly documents absence of both subretinal and intraretinal fluid, arguing against active exudation on this single B-scan."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question_type": "single",
+          "question_text": "Based on the described OCT findings (confluent medium-to-large drusen with drusenoid PED and no SRF/IRF/SHRM), what AMD stage is most consistent?",
+          "difficulty": "intermediate",
+          "topic": "AMD staging",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Early AMD",
+              "is_correct": false,
+              "reason": "Early AMD is typically characterized by small to medium drusen without extensive confluence or large drusen burden; this scan shows confluent medium-to-large drusen and a drusenoid PED."
+            },
+            {
+              "id": "B",
+              "text": "Intermediate non-neovascular (dry) AMD",
+              "is_correct": true,
+              "reason": "Large/confluent drusen and drusenoid PED without exudation or definite geographic atrophy are classic for intermediate dry AMD."
+            },
+            {
+              "id": "C",
+              "text": "Late non-neovascular AMD (geographic atrophy)",
+              "is_correct": false,
+              "reason": "Geographic atrophy requires OCT evidence such as cRORA (complete RPE and outer retinal atrophy) with prominent hypertransmission and outer retinal loss; the report states no definite cRORA."
+            },
+            {
+              "id": "D",
+              "text": "Neovascular (wet) AMD",
+              "is_correct": false,
+              "reason": "Wet AMD commonly shows exudative signs (SRF/IRF), SHRM, or fibrovascular PED; these are absent on this scan."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question_type": "multiple",
+          "question_text": "Which OCT features in this case support a diagnosis of non-neovascular (dry) AMD rather than active neovascular AMD? (Select ALL that apply.)",
+          "difficulty": "intermediate",
+          "topic": "differential diagnosis",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Absence of subretinal fluid (SRF)",
+              "is_correct": true,
+              "reason": "SRF is a common exudative biomarker of active neovascular AMD; its absence supports a non-exudative state on this scan."
+            },
+            {
+              "id": "B",
+              "text": "Absence of intraretinal fluid (IRF)",
+              "is_correct": true,
+              "reason": "IRF (cystoid changes) is another hallmark of exudation from macular neovascularization; its absence argues against active neovascular disease."
+            },
+            {
+              "id": "C",
+              "text": "Presence of drusenoid PED with heterogeneous sub-RPE reflectivity (rather than a clearly fibrovascular configuration)",
+              "is_correct": true,
+              "reason": "A drusenoid PED is typically associated with non-neovascular AMD; fibrovascular PED more strongly suggests MNV, especially when accompanied by other exudative signs."
+            },
+            {
+              "id": "D",
+              "text": "Presence of subretinal hyperreflective material (SHRM)",
+              "is_correct": false,
+              "reason": "SHRM often reflects neovascular tissue, fibrin, blood, or scar and would raise suspicion for neovascular AMD; the report states SHRM is absent."
+            },
+            {
+              "id": "E",
+              "text": "Definite cRORA (complete RPE and outer retinal atrophy) on this scan",
+              "is_correct": false,
+              "reason": "cRORA indicates late atrophic AMD (geographic atrophy), not specifically non-neovascular intermediate AMD, and the report states no definite cRORA."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question_type": "single",
+          "question_text": "Mild, focal hypertransmission into the choroid beneath areas of RPE irregularity most commonly suggests which interpretation in this context?",
+          "difficulty": "intermediate",
+          "topic": "RPE changes",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Early or incomplete RPE/outer retinal attenuation without established geographic atrophy",
+              "is_correct": true,
+              "reason": "Focal hypertransmission can occur with localized RPE disturbance or thinning; the report notes it is mild and not sharply demarcated, not meeting cRORA criteria."
+            },
+            {
+              "id": "B",
+              "text": "Definite complete RPE and outer retinal atrophy (cRORA)",
+              "is_correct": false,
+              "reason": "cRORA typically shows more pronounced, well-demarcated hypertransmission with clear RPE loss and outer retinal thinning; this is not described."
+            },
+            {
+              "id": "C",
+              "text": "Pathognomonic evidence of active macular neovascularization requiring immediate anti-VEGF",
+              "is_correct": false,
+              "reason": "Hypertransmission alone is not diagnostic of neovascular activity; exudative biomarkers (SRF/IRF) and/or SHRM/fibrovascular PED are more indicative."
+            },
+            {
+              "id": "D",
+              "text": "Normal OCT finding in a healthy macula",
+              "is_correct": false,
+              "reason": "In a normal macula, the RPE and outer retina typically limit transmission; focal hypertransmission implies altered RPE/outer retinal integrity."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question_type": "single",
+          "question_text": "Which OCT characteristic best differentiates a drusenoid PED from a serous PED?",
+          "difficulty": "intermediate",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Optically empty (hyporeflective) sub-RPE space beneath a smooth RPE dome",
+              "is_correct": false,
+              "reason": "This description is typical of a serous PED, not a drusenoid PED."
+            },
+            {
+              "id": "B",
+              "text": "Heterogeneous, moderately reflective sub-RPE material within a broad RPE elevation",
+              "is_correct": true,
+              "reason": "Drusenoid PED contains drusenoid material (not clear fluid), producing heterogeneous internal reflectivity under the elevated RPE."
+            },
+            {
+              "id": "C",
+              "text": "Cystoid hyporeflective spaces within the inner nuclear layer",
+              "is_correct": false,
+              "reason": "These are intraretinal cysts (IRF) and do not define PED type."
+            },
+            {
+              "id": "D",
+              "text": "Hyperreflective subretinal material between the photoreceptors and RPE (SHRM)",
+              "is_correct": false,
+              "reason": "SHRM is a subretinal finding often associated with neovascular AMD and is not the defining feature of drusenoid vs serous PED."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question_type": "multiple",
+          "question_text": "Which OCT findings are considered higher-risk biomarkers for progression to advanced AMD and are suggested (even if subtle) in this report? (Select ALL that apply.)",
+          "difficulty": "advanced",
+          "topic": "clinical significance",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Large/confluent drusen",
+              "is_correct": true,
+              "reason": "Large drusen and confluence are established risk factors for progression to late AMD (both geographic atrophy and neovascular AMD)."
+            },
+            {
+              "id": "B",
+              "text": "Drusenoid PED",
+              "is_correct": true,
+              "reason": "Drusenoid PED reflects significant sub-RPE deposit burden and is associated with increased risk of progression to advanced AMD."
+            },
+            {
+              "id": "C",
+              "text": "Intraretinal hyperreflective foci overlying drusen/PED",
+              "is_correct": true,
+              "reason": "Hyperreflective foci (often representing migrating RPE cells/pigment) are linked to higher risk of progression toward atrophy or neovascularization; the report notes possible sparse foci."
+            },
+            {
+              "id": "D",
+              "text": "Definite subretinal fluid",
+              "is_correct": false,
+              "reason": "SRF is absent. When present, SRF may indicate active neovascular AMD rather than a risk biomarker in non-neovascular disease on this scan."
+            },
+            {
+              "id": "E",
+              "text": "Established cRORA (geographic atrophy)",
+              "is_correct": false,
+              "reason": "cRORA is not identified. It represents already-established late atrophic AMD rather than a subtle risk marker suggested here."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question_type": "single",
+          "question_text": "Given these OCT findings (intermediate dry AMD with drusenoid PED and no exudation), which management approach is most appropriate?",
+          "difficulty": "advanced",
+          "topic": "clinical management",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Initiate intravitreal anti-VEGF injections immediately",
+              "is_correct": false,
+              "reason": "Anti-VEGF is indicated for neovascular AMD with evidence of MNV activity (e.g., SRF/IRF/SHRM or angiographic/OCTA evidence). This scan shows no exudation or SHRM."
+            },
+            {
+              "id": "B",
+              "text": "Recommend AREDS2 supplementation (if no contraindications) and schedule routine monitoring with OCT/Amsler grid education",
+              "is_correct": true,
+              "reason": "Intermediate AMD (large/confluent drusen) is the classic indication for AREDS2; monitoring and patient education for new distortion/vision change are appropriate."
+            },
+            {
+              "id": "C",
+              "text": "Start topical corticosteroids to reduce macular edema",
+              "is_correct": false,
+              "reason": "There is no macular edema (no IRF) and steroids are not a treatment for dry AMD."
+            },
+            {
+              "id": "D",
+              "text": "Urgent laser photocoagulation to the drusen/PED region",
+              "is_correct": false,
+              "reason": "Laser to drusen is not standard care and does not improve outcomes in AMD; it may increase risk of complications."
+            },
+            {
+              "id": "E",
+              "text": "Diagnose geographic atrophy and initiate complement-inhibitor therapy based on this single scan",
+              "is_correct": false,
+              "reason": "The report states no definite cRORA and iRORA is not clearly met; complement inhibitors are considered for confirmed GA and require careful documentation and staging."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question_type": "single",
+          "question_text": "Which additional test would be most helpful to confidently exclude subclinical macular neovascularization in a patient with drusenoid PED but no SRF/IRF on OCT?",
+          "difficulty": "advanced",
+          "topic": "differential diagnosis",
+          "choices": [
+            {
+              "id": "A",
+              "text": "OCT angiography (OCTA) of the macula",
+              "is_correct": true,
+              "reason": "OCTA can detect flow within a macular neovascular network even when structural OCT lacks exudation (non-exudative/subclinical MNV)."
+            },
+            {
+              "id": "B",
+              "text": "B-scan ultrasonography",
+              "is_correct": false,
+              "reason": "Ultrasound is not sensitive for detecting macular neovascularization and is typically used for media opacity or posterior segment masses."
+            },
+            {
+              "id": "C",
+              "text": "Automated perimetry (24-2 visual field)",
+              "is_correct": false,
+              "reason": "Standard automated perimetry is not a primary tool to detect MNV; it may miss subtle macular pathology and does not visualize neovascular flow."
+            },
+            {
+              "id": "D",
+              "text": "Gonioscopy",
+              "is_correct": false,
+              "reason": "Gonioscopy evaluates the anterior chamber angle and is unrelated to macular neovascularization assessment."
+            },
+            {
+              "id": "E",
+              "text": "Color vision testing alone",
+              "is_correct": false,
+              "reason": "Color testing is nonspecific and cannot confirm or exclude MNV; imaging (OCTA/FA) is required for vascular assessment."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "generated_at": "2026-02-02T12:31:56.836536",
+        "model": "gpt-5.2",
+        "question_count": 10
+      }
+    },
+    {
+      "image_id": "17-40819789-25-LTQUNJCKAFECRLPBGSVPHRCFX+APMIZWKHN",
+      "image_file": "image_007.png",
+      "image_path_original": "dataset/processed_images/17-40819789-25-LTQUNJCKAFECRLPBGSVPHRCFX+APMIZWKHNMLBMGXUYKBHFKNHYYCDLDUKARFZK+EVNCUI.png",
+      "amd_stage": "LateWet",
+      "biomarkers": [
+        "hypertransmission",
+        "drusenoid PED",
+        "iRORA",
+        "subretinal fluid",
+        "fibrovascular PED",
+        "intraretinal fluid",
+        "RPE elevation",
+        "subretinal hyperreflective material",
+        "PED",
+        "hyperreflective foci",
+        "cRORA"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question_type": "single",
+          "question_text": "Which OCT feature best supports the presence of drusen in this macular B-scan?",
+          "difficulty": "basic",
+          "topic": "drusen",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Multiple focal elevations of the RPE/Bruch’s complex with an undulating contour",
+              "is_correct": true,
+              "reason": "Drusen appear as focal to broad elevations of the RPE/Bruch’s complex, often producing an irregular/undulating RPE contour, as described in the report."
+            },
+            {
+              "id": "B",
+              "text": "Hyporeflective space between the neurosensory retina and the RPE",
+              "is_correct": false,
+              "reason": "This describes subretinal fluid (SRF), which is reported as absent."
+            },
+            {
+              "id": "C",
+              "text": "Intraretinal cystoid hyporeflective cavities in the inner nuclear layer",
+              "is_correct": false,
+              "reason": "This describes intraretinal fluid (IRF) or cystoid changes, which are reported as absent."
+            },
+            {
+              "id": "D",
+              "text": "A continuous band of subretinal hyperreflective material (SHRM) above the RPE",
+              "is_correct": false,
+              "reason": "SHRM can suggest neovascular tissue/exudation; it is specifically reported as absent on this scan."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question_type": "single",
+          "question_text": "What is the most likely type of pigment epithelial detachment (PED) described on this OCT scan?",
+          "difficulty": "basic",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Drusenoid PED",
+              "is_correct": true,
+              "reason": "A drusenoid PED is typically broad with smooth-to-undulating RPE elevation and heterogeneous sub-RPE reflectivity rather than an optically empty space, matching the report."
+            },
+            {
+              "id": "B",
+              "text": "Serous PED",
+              "is_correct": false,
+              "reason": "Serous PEDs are usually optically empty (hyporeflective) beneath the RPE; the report emphasizes heterogeneous sub-RPE reflectivity instead."
+            },
+            {
+              "id": "C",
+              "text": "Fibrovascular PED",
+              "is_correct": false,
+              "reason": "Fibrovascular PED often shows irregular RPE elevation with more complex heterogeneous reflectivity and commonly associates with exudation/SHRM; the report states no strong features suggesting fibrovascular PED on this single scan."
+            },
+            {
+              "id": "D",
+              "text": "Hemorrhagic PED",
+              "is_correct": false,
+              "reason": "Hemorrhagic PED typically shows hyperreflective sub-RPE material with shadowing; this is not described."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question_type": "single",
+          "question_text": "Which statement best describes the fluid status on this OCT B-scan?",
+          "difficulty": "basic",
+          "topic": "fluid assessment",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Neither subretinal fluid (SRF) nor intraretinal fluid (IRF) is present",
+              "is_correct": true,
+              "reason": "The report explicitly states SRF is absent and IRF is absent, supporting a non-exudative appearance on this single B-scan."
+            },
+            {
+              "id": "B",
+              "text": "SRF is present but IRF is absent",
+              "is_correct": false,
+              "reason": "No hyporeflective subretinal space is described; SRF is reported as absent."
+            },
+            {
+              "id": "C",
+              "text": "IRF is present but SRF is absent",
+              "is_correct": false,
+              "reason": "No intraretinal cystoid cavities are described; IRF is reported as absent."
+            },
+            {
+              "id": "D",
+              "text": "Both SRF and IRF are present",
+              "is_correct": false,
+              "reason": "Exudative fluid is not identified on this scan; both SRF and IRF are reported absent."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question_type": "single",
+          "question_text": "Based on the OCT features provided (medium-to-large drusen, drusenoid PED, no SRF/IRF, no SHRM), what AMD stage is most consistent with this scan?",
+          "difficulty": "intermediate",
+          "topic": "AMD staging",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Early AMD",
+              "is_correct": false,
+              "reason": "Early AMD typically features small drusen (<63 µm) with minimal pigmentary change; this scan shows medium-to-large drusen and a drusenoid PED, suggesting more advanced non-exudative disease."
+            },
+            {
+              "id": "B",
+              "text": "Intermediate AMD (non-exudative)",
+              "is_correct": true,
+              "reason": "Intermediate AMD is characterized by medium/large drusen (≥63 µm, often ≥125 µm) and/or pigmentary abnormalities without exudation; the scan shows medium-to-large drusen and drusenoid PED without SRF/IRF or SHRM."
+            },
+            {
+              "id": "C",
+              "text": "Late AMD—neovascular (wet) AMD",
+              "is_correct": false,
+              "reason": "Neovascular AMD is usually supported by exudation (SRF/IRF), SHRM, or fibrovascular PED; these are not present on this B-scan."
+            },
+            {
+              "id": "D",
+              "text": "Late AMD—geographic atrophy (complete RPE and outer retinal atrophy, cRORA)",
+              "is_correct": false,
+              "reason": "cRORA requires definite RPE loss with marked hypertransmission and outer retinal loss in a well-defined area; the report notes no definite cRORA and only mild–moderate focal hypertransmission."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question_type": "multiple",
+          "question_text": "Which OCT findings in this report are considered biomarkers associated with increased risk of progression to late AMD? (Select ALL that apply.)",
+          "difficulty": "intermediate",
+          "topic": "risk biomarkers",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Medium-to-large, partially confluent drusen",
+              "is_correct": true,
+              "reason": "Large drusen burden and confluence are established risk features for progression from intermediate AMD to late AMD."
+            },
+            {
+              "id": "B",
+              "text": "Drusenoid PED",
+              "is_correct": true,
+              "reason": "Drusenoid PED reflects substantial sub-RPE deposit load and is associated with higher risk of progression to atrophy and/or neovascular AMD."
+            },
+            {
+              "id": "C",
+              "text": "Hyperreflective foci within the retina",
+              "is_correct": true,
+              "reason": "Hyperreflective foci (often representing migrated RPE cells/pigment) are linked to higher risk of progression, including toward atrophy."
+            },
+            {
+              "id": "D",
+              "text": "Absence of SRF and IRF",
+              "is_correct": false,
+              "reason": "Absence of fluid argues against current exudation but is not itself a positive risk biomarker; risk is driven more by drusen burden, pigmentary changes, HRF, and atrophy markers."
+            },
+            {
+              "id": "E",
+              "text": "Mild–moderate focal hypertransmission beneath RPE disturbance",
+              "is_correct": true,
+              "reason": "Focal hypertransmission can reflect RPE dysfunction/incipient atrophic change (depending on extent and associated outer retinal changes) and may indicate higher risk compared with no hypertransmission."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question_type": "single",
+          "question_text": "Which OCT feature would most strongly shift the interpretation from non-exudative intermediate AMD toward active neovascular (exudative) AMD on the same visit?",
+          "difficulty": "intermediate",
+          "topic": "exudation vs non-exudation",
+          "choices": [
+            {
+              "id": "A",
+              "text": "New intraretinal fluid (cystoid spaces) adjacent to the fovea",
+              "is_correct": true,
+              "reason": "IRF is a strong indicator of active exudation from macular neovascularization and typically prompts urgent evaluation/treatment."
+            },
+            {
+              "id": "B",
+              "text": "Stable medium drusen without fluid",
+              "is_correct": false,
+              "reason": "Drusen alone support non-exudative AMD and do not confirm active neovascular disease."
+            },
+            {
+              "id": "C",
+              "text": "A smooth, optically empty serous PED without fluid in the retina",
+              "is_correct": false,
+              "reason": "A serous PED can occur with or without neovascularization; without accompanying exudation or other neovascular signs, it is less definitive than IRF."
+            },
+            {
+              "id": "D",
+              "text": "Mild speckle/noise and limited field of view",
+              "is_correct": false,
+              "reason": "These are image quality limitations and do not indicate neovascular activity."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question_type": "single",
+          "question_text": "How should the mild–moderate focal choroidal hypertransmission described beneath areas of RPE disturbance be interpreted in this context?",
+          "difficulty": "intermediate",
+          "topic": "RPE changes / hypertransmission",
+          "choices": [
+            {
+              "id": "A",
+              "text": "It suggests some degree of RPE dysfunction/attenuation but does not meet criteria for definite cRORA on this single scan",
+              "is_correct": true,
+              "reason": "Hypertransmission can occur with RPE thinning/irregularity over drusen/PED; cRORA requires more definite, sharply demarcated RPE loss with corresponding outer retinal changes."
+            },
+            {
+              "id": "B",
+              "text": "It is diagnostic of complete RPE and outer retinal atrophy (cRORA)",
+              "is_correct": false,
+              "reason": "cRORA requires a well-defined area of complete RPE loss and outer retinal atrophy; the report explicitly states no definite cRORA."
+            },
+            {
+              "id": "C",
+              "text": "It proves the presence of subretinal fluid",
+              "is_correct": false,
+              "reason": "Hypertransmission is increased signal into the choroid; SRF is a hyporeflective space above the RPE. They are different findings."
+            },
+            {
+              "id": "D",
+              "text": "It is most consistent with vitreomacular traction",
+              "is_correct": false,
+              "reason": "Vitreomacular traction is identified by vitreoretinal interface distortion/adhesion; hypertransmission is a deeper signal phenomenon related to RPE/outer retina."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question_type": "multiple",
+          "question_text": "Which OCT characteristics favor a drusenoid PED over a fibrovascular PED in this case? (Select ALL that apply.)",
+          "difficulty": "advanced",
+          "topic": "PED differential",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Broad, smooth-to-undulating elevation of the RPE with a drusen-like contour",
+              "is_correct": true,
+              "reason": "Drusenoid PEDs typically appear as broad RPE elevations with smooth/undulating contour related to confluent drusen."
+            },
+            {
+              "id": "B",
+              "text": "Heterogeneous sub-RPE reflectivity rather than a highly irregular, complex reflectivity pattern suggestive of neovascular tissue",
+              "is_correct": true,
+              "reason": "Drusenoid material often appears granular/heterogeneous but not as complex/irregular as fibrovascular tissue; the report states no strong features of fibrovascular PED on this scan."
+            },
+            {
+              "id": "C",
+              "text": "Absence of SRF/IRF on this B-scan",
+              "is_correct": true,
+              "reason": "While not definitive, lack of exudation makes active fibrovascular PED with neovascular AMD less likely in this single-scan context."
+            },
+            {
+              "id": "D",
+              "text": "Presence of subretinal hyperreflective material (SHRM)",
+              "is_correct": false,
+              "reason": "SHRM would increase suspicion for neovascularization/fibrovascular PED; the report states SHRM is absent."
+            },
+            {
+              "id": "E",
+              "text": "A sharply demarcated zone of profound hypertransmission consistent with established atrophy",
+              "is_correct": false,
+              "reason": "This would support atrophy (cRORA) rather than distinguishing drusenoid vs fibrovascular PED; the report notes only mild–moderate focal hypertransmission, not a classic atrophic zone."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question_type": "single",
+          "question_text": "Given the OCT findings (intermediate AMD features without exudation), which management approach is most appropriate?",
+          "difficulty": "advanced",
+          "topic": "clinical management",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Initiate intravitreal anti-VEGF injections immediately",
+              "is_correct": false,
+              "reason": "Anti-VEGF is indicated for exudative (neovascular) AMD; this scan shows no SRF/IRF and no SHRM, so there is no OCT evidence of active exudation on this B-scan."
+            },
+            {
+              "id": "B",
+              "text": "Recommend AREDS2 supplementation (if no contraindications), risk-factor modification, and scheduled follow-up with symptom monitoring",
+              "is_correct": true,
+              "reason": "Intermediate AMD (large drusen/drusenoid PED) typically warrants AREDS2 consideration, counseling (smoking cessation, cardiovascular risk management), and monitoring for conversion to neovascular AMD or atrophy."
+            },
+            {
+              "id": "C",
+              "text": "Urgent pars plana vitrectomy for presumed vitreomacular traction",
+              "is_correct": false,
+              "reason": "No obvious vitreomacular traction is described; vitrectomy is not indicated for drusen/drusenoid PED."
+            },
+            {
+              "id": "D",
+              "text": "Observe without counseling because risk of progression is negligible",
+              "is_correct": false,
+              "reason": "Medium-to-large, partially confluent drusen with drusenoid PED and hyperreflective foci confer meaningful risk of progression and merit counseling and follow-up."
+            },
+            {
+              "id": "E",
+              "text": "Start topical NSAID drops to prevent neovascular conversion",
+              "is_correct": false,
+              "reason": "Topical NSAIDs do not prevent AMD progression and are not standard of care for intermediate AMD."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question_type": "single",
+          "question_text": "Which differential diagnosis is most important to consider when interpreting a broad RPE elevation (PED) on OCT, and what additional test is most helpful to distinguish it from non-exudative AMD changes?",
+          "difficulty": "advanced",
+          "topic": "differential diagnosis",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Macular neovascularization (type 1 CNV); OCT angiography (OCTA) or fluorescein angiography (FA) to detect flow/leakage",
+              "is_correct": true,
+              "reason": "A PED can be drusenoid or fibrovascular; OCTA can detect a neovascular network (flow) and FA can show leakage, helping differentiate non-exudative from neovascular disease when structural OCT is equivocal."
+            },
+            {
+              "id": "B",
+              "text": "Epiretinal membrane; B-scan ultrasonography to confirm",
+              "is_correct": false,
+              "reason": "ERM is a vitreoretinal interface abnormality best seen on OCT itself; ultrasound is not the preferred test for ERM diagnosis."
+            },
+            {
+              "id": "C",
+              "text": "Retinal detachment; gonioscopy to confirm",
+              "is_correct": false,
+              "reason": "Gonioscopy evaluates the anterior chamber angle and is unrelated to retinal detachment diagnosis."
+            },
+            {
+              "id": "D",
+              "text": "Optic disc edema; Humphrey visual field testing to confirm",
+              "is_correct": false,
+              "reason": "Optic disc edema is an optic nerve finding, not a macular PED differential; visual fields do not distinguish PED etiology."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "generated_at": "2026-02-02T12:30:49.042211",
+        "model": "gpt-5.2",
+        "question_count": 10
+      }
+    },
+    {
+      "image_id": "2-16049360-25-HZQRHKLRKZJRWMFGTKIQTBSCI+XQSUHKEYBT",
+      "image_file": "image_009.png",
+      "image_path_original": "dataset/processed_images/2-16049360-25-HZQRHKLRKZJRWMFGTKIQTBSCI+XQSUHKEYBTPKGZTOIUGKLPOMJWSQEILLUGJTF+GRAWQJ.png",
+      "amd_stage": "LateWet",
+      "biomarkers": [
+        "hypertransmission",
+        "drusenoid PED",
+        "iRORA",
+        "subretinal fluid",
+        "intraretinal fluid",
+        "RPE elevation",
+        "subretinal hyperreflective material",
+        "PED",
+        "hyperreflective foci",
+        "cRORA",
+        "large drusen"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question_type": "single",
+          "question_text": "Which OCT feature best describes the predominant lesion in the central macula on this scan?",
+          "difficulty": "basic",
+          "topic": "drusen",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Confluent medium-to-large drusen causing broad undulation of the RPE/Bruch’s complex",
+              "is_correct": true,
+              "reason": "The report describes predominantly medium-to-large drusen with confluence and broad RPE/Bruch’s complex undulation in the subfoveal/juxtafoveal region—typical of intermediate AMD morphology."
+            },
+            {
+              "id": "B",
+              "text": "Reticular pseudodrusen (subretinal drusenoid deposits) above the RPE",
+              "is_correct": false,
+              "reason": "Reticular pseudodrusen are located in the subretinal space (above the RPE) as discrete deposits; the described lesions are drusen/drusenoid elevations of the RPE (below the neurosensory retina)."
+            },
+            {
+              "id": "C",
+              "text": "Subretinal fluid forming a hyporeflective cleft between retina and RPE",
+              "is_correct": false,
+              "reason": "The report explicitly states SRF is absent; no optically empty hyporeflective space between neurosensory retina and RPE is identified."
+            },
+            {
+              "id": "D",
+              "text": "Intraretinal cystoid spaces consistent with exudation",
+              "is_correct": false,
+              "reason": "IRF is reported absent; image quality is fair but no definite intraretinal cysts are described."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question_type": "single",
+          "question_text": "The pigment epithelial detachment (PED) described is most consistent with which subtype on OCT?",
+          "difficulty": "basic",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Drusenoid PED",
+              "is_correct": true,
+              "reason": "A broad, dome-like RPE elevation with heterogeneous hyperreflective material is characteristic of drusenoid PED (confluent drusen) rather than optically empty fluid."
+            },
+            {
+              "id": "B",
+              "text": "Serous PED",
+              "is_correct": false,
+              "reason": "Serous PED typically shows an optically empty (hyporeflective) sub-RPE space; the report emphasizes heterogeneous hyperreflective material instead."
+            },
+            {
+              "id": "C",
+              "text": "Fibrovascular PED",
+              "is_correct": false,
+              "reason": "Fibrovascular PED often shows irregular RPE elevation with heterogeneous reflective tissue and commonly coexists with exudation (SRF/IRF/SHRM); this scan reports no SRF/IRF and no SHRM."
+            },
+            {
+              "id": "D",
+              "text": "Hemorrhagic PED",
+              "is_correct": false,
+              "reason": "Hemorrhagic PED is suggested by dense hyperreflective sub-RPE material with shadowing and clinical hemorrhage; these features are not described."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question_type": "single",
+          "question_text": "Which statement best characterizes fluid status on this OCT scan?",
+          "difficulty": "basic",
+          "topic": "fluid assessment",
+          "choices": [
+            {
+              "id": "A",
+              "text": "No definite subretinal fluid (SRF) or intraretinal fluid (IRF) is present",
+              "is_correct": true,
+              "reason": "The report states SRF is absent and IRF is absent, supporting a non-exudative appearance on this single B-scan."
+            },
+            {
+              "id": "B",
+              "text": "SRF is present but IRF is absent",
+              "is_correct": false,
+              "reason": "There is no described hyporeflective space between neurosensory retina and RPE, which would be required to call SRF."
+            },
+            {
+              "id": "C",
+              "text": "IRF is present but SRF is absent",
+              "is_correct": false,
+              "reason": "No definite intraretinal cystoid spaces are described; speckle noise may limit detection of tiny cysts, but the reported interpretation is IRF absent."
+            },
+            {
+              "id": "D",
+              "text": "Both SRF and IRF are present, indicating active exudation",
+              "is_correct": false,
+              "reason": "Active exudation requires fluid compartments that are explicitly reported as absent here."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question_type": "single",
+          "question_text": "Based on the described OCT findings (confluent medium-to-large drusen, drusenoid PED, mild hyperreflective foci, no SRF/IRF/SHRM), what is the most appropriate AMD stage for this scan?",
+          "difficulty": "intermediate",
+          "topic": "AMD staging",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Intermediate non-exudative (dry) AMD",
+              "is_correct": true,
+              "reason": "Large/confluent drusen and drusenoid PED with hyperreflective foci suggest intermediate AMD, and absence of SRF/IRF/SHRM argues against active neovascular (exudative) AMD on this scan."
+            },
+            {
+              "id": "B",
+              "text": "Early AMD",
+              "is_correct": false,
+              "reason": "Early AMD is typically characterized by small drusen and minimal pigmentary change; this scan shows medium-to-large confluent drusen and a drusenoid PED."
+            },
+            {
+              "id": "C",
+              "text": "Late dry AMD with complete RPE and outer retinal atrophy (cRORA)",
+              "is_correct": false,
+              "reason": "No definite cRORA is identified; hypertransmission is mild–moderate and patchy without a clearly demarcated zone of complete RPE loss on this single scan."
+            },
+            {
+              "id": "D",
+              "text": "Late wet (neovascular) AMD with active exudation",
+              "is_correct": false,
+              "reason": "Exudative AMD is suggested by SRF/IRF, SHRM, or fibrovascular PED; these are not present in the report."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question_type": "multiple",
+          "question_text": "Which OCT findings in this report are considered risk markers for progression to advanced AMD? (Select ALL that apply.)",
+          "difficulty": "intermediate",
+          "topic": "clinical significance",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Large, confluent drusen/drusenoid PED",
+              "is_correct": true,
+              "reason": "Large drusen and drusenoid PED reflect substantial sub-RPE deposit burden and are associated with increased risk of progression to geographic atrophy and/or neovascular AMD."
+            },
+            {
+              "id": "B",
+              "text": "Hyperreflective foci in the outer retina",
+              "is_correct": true,
+              "reason": "Hyperreflective foci (often representing migrated RPE or inflammatory/degenerative material) are linked to higher risk of progression and are commonly seen in intermediate AMD."
+            },
+            {
+              "id": "C",
+              "text": "Patchy mild–moderate hypertransmission suggesting RPE attenuation",
+              "is_correct": true,
+              "reason": "Hypertransmission indicates reduced RPE/outer retinal attenuation and can be an early atrophy-associated sign (supporting possible iRORA features)."
+            },
+            {
+              "id": "D",
+              "text": "Definite intraretinal fluid",
+              "is_correct": false,
+              "reason": "IRF is not present in this report; while IRF can indicate neovascular activity, it is not a described risk marker here."
+            },
+            {
+              "id": "E",
+              "text": "Subretinal hyperreflective material (SHRM)",
+              "is_correct": false,
+              "reason": "SHRM is absent on this scan; when present it can suggest neovascular tissue or fibrosis, but it is not a finding in this report."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question_type": "single",
+          "question_text": "Mild-to-moderate hypertransmission beneath the RPE elevation most strongly suggests which pathophysiologic change in this context?",
+          "difficulty": "intermediate",
+          "topic": "RPE changes",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Attenuation or focal dysfunction of the RPE allowing increased OCT signal into the choroid",
+              "is_correct": true,
+              "reason": "Hypertransmission occurs when the RPE/outer retina provides less signal attenuation (e.g., thinning/attenuation), allowing greater penetration into the choroid—an atrophy-associated sign."
+            },
+            {
+              "id": "B",
+              "text": "Optically empty sub-RPE fluid consistent with serous PED",
+              "is_correct": false,
+              "reason": "Serous PED is defined by hyporeflective sub-RPE space; hypertransmission refers to increased signal below the RPE, not the presence of optically empty sub-RPE fluid."
+            },
+            {
+              "id": "C",
+              "text": "Definite choroidal neovascular membrane with exudation",
+              "is_correct": false,
+              "reason": "Hypertransmission alone is not diagnostic of CNV; the scan lacks SRF/IRF and SHRM, and the PED is described as drusenoid rather than fibrovascular."
+            },
+            {
+              "id": "D",
+              "text": "Vitreomacular traction causing outer retinal disruption",
+              "is_correct": false,
+              "reason": "Vitreomacular traction would be characterized by tractional changes at the vitreoretinal interface and retinal distortion; the described changes are centered on the RPE/drusen complex."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question_type": "single",
+          "question_text": "Which OCT feature would most strongly shift the interpretation from non-exudative AMD to active neovascular (exudative) AMD on a follow-up scan?",
+          "difficulty": "intermediate",
+          "topic": "neovascular conversion",
+          "choices": [
+            {
+              "id": "A",
+              "text": "New subretinal fluid (SRF) adjacent to the fovea",
+              "is_correct": true,
+              "reason": "New SRF is a classic OCT sign of exudation and would raise strong suspicion for macular neovascularization requiring prompt evaluation and often anti-VEGF therapy."
+            },
+            {
+              "id": "B",
+              "text": "Persistence of large drusen without fluid",
+              "is_correct": false,
+              "reason": "Large drusen indicate intermediate AMD and risk, but without fluid they do not establish active neovascular disease."
+            },
+            {
+              "id": "C",
+              "text": "Mild hyperreflective foci over drusen",
+              "is_correct": false,
+              "reason": "Hyperreflective foci are a progression risk marker but are not, by themselves, evidence of active exudation."
+            },
+            {
+              "id": "D",
+              "text": "Stable drusenoid PED without SRF/IRF",
+              "is_correct": false,
+              "reason": "A drusenoid PED can remain non-exudative; exudative conversion is suggested by fluid and/or SHRM or a fibrovascular PED pattern."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question_type": "multiple",
+          "question_text": "Which combinations of OCT findings are most consistent with incipient RPE and outer retinal atrophy (iRORA) rather than complete RPE and outer retinal atrophy (cRORA)? (Select ALL that apply.)",
+          "difficulty": "advanced",
+          "topic": "atrophy markers (iRORA/cRORA)",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Patchy hypertransmission with RPE irregularity/attenuation but without a sharply demarcated area of complete RPE loss",
+              "is_correct": true,
+              "reason": "iRORA reflects early atrophic change: increased transmission and RPE/outer retinal disturbance that does not meet criteria for complete RPE loss and a well-defined atrophic zone."
+            },
+            {
+              "id": "B",
+              "text": "Subtle outer retinal band (ellipsoid zone) irregularity overlying drusen without definite complete loss of outer retinal layers",
+              "is_correct": true,
+              "reason": "Early disruption/irregularity of outer retinal bands can accompany iRORA; cRORA typically shows more definitive outer retinal loss in a defined atrophic area."
+            },
+            {
+              "id": "C",
+              "text": "Well-demarcated region of marked hypertransmission with complete RPE loss and overlying outer retinal thinning consistent with cRORA",
+              "is_correct": false,
+              "reason": "This describes cRORA, not iRORA. The report explicitly notes no definite cRORA on this single scan."
+            },
+            {
+              "id": "D",
+              "text": "Intraretinal cysts and SRF indicating exudative activity",
+              "is_correct": false,
+              "reason": "Fluid compartments are features of exudation/neovascular activity, not diagnostic criteria for iRORA versus cRORA."
+            },
+            {
+              "id": "E",
+              "text": "Heterogeneous sub-RPE material forming a drusenoid PED without exudation",
+              "is_correct": false,
+              "reason": "A drusenoid PED can coexist with iRORA, but it is not itself a defining criterion for iRORA; iRORA is defined by atrophy-related changes (transmission, RPE/outer retina) rather than the presence of a drusenoid PED alone."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question_type": "single",
+          "question_text": "In differentiating a drusenoid PED from a fibrovascular PED on OCT, which feature most supports a fibrovascular PED?",
+          "difficulty": "advanced",
+          "topic": "differential diagnosis (PED subtype)",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Associated subretinal hyperreflective material (SHRM) and/or adjacent SRF/IRF suggesting exudation",
+              "is_correct": true,
+              "reason": "Fibrovascular PED often accompanies macular neovascularization and may show SHRM and exudative fluid (SRF/IRF). Their presence would favor fibrovascular over drusenoid PED."
+            },
+            {
+              "id": "B",
+              "text": "Broad, smooth dome-shaped RPE elevation filled with homogeneous hyperreflective material typical of confluent drusen",
+              "is_correct": false,
+              "reason": "This description aligns with drusenoid PED rather than fibrovascular PED, particularly in the absence of fluid and SHRM."
+            },
+            {
+              "id": "C",
+              "text": "Optically empty sub-RPE space with a smooth RPE contour",
+              "is_correct": false,
+              "reason": "An optically empty sub-RPE space is more typical of a serous PED, not specifically fibrovascular PED."
+            },
+            {
+              "id": "D",
+              "text": "Presence of medium-to-large drusen without fluid",
+              "is_correct": false,
+              "reason": "Large drusen support intermediate non-exudative AMD but do not distinguish fibrovascular from drusenoid PED in the absence of exudative signs."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question_type": "single",
+          "question_text": "A patient with these OCT findings (intermediate non-exudative AMD with large confluent drusen/drusenoid PED, mild hyperreflective foci, no SRF/IRF) asks about management. Which is the most appropriate next step?",
+          "difficulty": "advanced",
+          "topic": "clinical management implications",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Recommend AREDS2 supplementation (if no contraindications) and routine monitoring with return precautions for new distortion or vision loss",
+              "is_correct": true,
+              "reason": "Intermediate AMD is the classic indication for AREDS2-based supplementation to reduce risk of progression, along with monitoring (often including Amsler grid/home symptoms awareness and periodic OCT)."
+            },
+            {
+              "id": "B",
+              "text": "Initiate intravitreal anti-VEGF injections immediately",
+              "is_correct": false,
+              "reason": "Anti-VEGF is indicated for neovascular AMD with exudation or confirmed MNV; this scan shows no SRF/IRF/SHRM and is most consistent with non-exudative intermediate AMD."
+            },
+            {
+              "id": "C",
+              "text": "Perform urgent focal/grid laser to the macula to treat drusen",
+              "is_correct": false,
+              "reason": "Macular laser is not a treatment for drusen in AMD and can cause retinal damage; it is not standard care for intermediate AMD."
+            },
+            {
+              "id": "D",
+              "text": "No follow-up is needed because there is no fluid",
+              "is_correct": false,
+              "reason": "Absence of fluid does not eliminate risk; large confluent drusen/drusenoid PED and hyperreflective foci increase progression risk and warrant ongoing monitoring."
+            },
+            {
+              "id": "E",
+              "text": "Start high-dose systemic corticosteroids to reduce retinal inflammation",
+              "is_correct": false,
+              "reason": "Systemic corticosteroids are not a treatment for AMD and may worsen systemic comorbidities; they do not address drusen-related pathology."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "generated_at": "2026-02-02T12:30:49.654377",
+        "model": "gpt-5.2",
+        "question_count": 10
+      }
+    },
+    {
+      "image_id": "24-16771563-25-TUDXZHIVDGEVZWNRNVCSRPJOD+XEVOFVQGZ",
+      "image_file": "image_014.png",
+      "image_path_original": "dataset/processed_images/24-16771563-25-TUDXZHIVDGEVZWNRNVCSRPJOD+XEVOFVQGZYXCSHUVWWXVEEZWMDAXOLBHGQMBO+DQEEDC.png",
+      "amd_stage": "LateWet",
+      "biomarkers": [
+        "hypertransmission",
+        "drusenoid PED",
+        "iRORA",
+        "no AMD",
+        "medium drusen",
+        "subretinal fluid",
+        "intraretinal fluid",
+        "RPE elevation",
+        "subretinal hyperreflective material",
+        "PED",
+        "hyperreflective foci",
+        "cRORA"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question_type": "single",
+          "question_text": "Which OCT feature best supports the presence of drusen in this scan?",
+          "difficulty": "basic",
+          "topic": "drusen",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Multiple small RPE elevations producing an undulating RPE/Bruch’s complex in the subfoveal/parafoveal region",
+              "is_correct": true,
+              "reason": "Drusen on OCT appear as focal to confluent elevations of the RPE/Bruch’s complex, often giving an undulating contour, particularly in the central macula in AMD."
+            },
+            {
+              "id": "B",
+              "text": "Hyporeflective space between neurosensory retina and RPE (subretinal fluid)",
+              "is_correct": false,
+              "reason": "Subretinal fluid is a sign of exudation (often neovascular AMD) and is not the OCT definition of drusen."
+            },
+            {
+              "id": "C",
+              "text": "Intraretinal cystoid hyporeflective spaces",
+              "is_correct": false,
+              "reason": "Intraretinal fluid/cysts suggest exudation (e.g., CNV, DME, RVO) rather than drusen."
+            },
+            {
+              "id": "D",
+              "text": "A hyperreflective band between the photoreceptors and RPE consistent with subretinal hyperreflective material (SHRM)",
+              "is_correct": false,
+              "reason": "SHRM is more suggestive of neovascular AMD (e.g., type 2 CNV, hemorrhage, fibrin) and is not a typical appearance of drusen."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question_type": "single",
+          "question_text": "What type of pigment epithelial detachment (PED) is most consistent with this OCT description?",
+          "difficulty": "basic",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Drusenoid PED",
+              "is_correct": true,
+              "reason": "A drusenoid PED is typically broad and shallow with heterogeneous sub-RPE reflectivity representing drusenoid material rather than optically clear fluid."
+            },
+            {
+              "id": "B",
+              "text": "Serous PED",
+              "is_correct": false,
+              "reason": "Serous PED usually shows a dome-shaped RPE elevation with an optically clear (hyporeflective) sub-RPE space, which is not described here."
+            },
+            {
+              "id": "C",
+              "text": "Fibrovascular PED",
+              "is_correct": false,
+              "reason": "Fibrovascular PED often has irregular or notched contours with heterogeneous reflectivity and is commonly accompanied by exudative signs (SRF/IRF or SHRM), which are absent on this scan."
+            },
+            {
+              "id": "D",
+              "text": "Hemorrhagic PED",
+              "is_correct": false,
+              "reason": "Hemorrhagic PED typically shows hyperreflective sub-RPE material with shadowing and is usually associated with acute neovascular activity; these features are not reported."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question_type": "single",
+          "question_text": "Which statement best describes the fluid status on this OCT B-scan?",
+          "difficulty": "basic",
+          "topic": "fluid assessment",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Neither subretinal fluid (SRF) nor intraretinal fluid (IRF) is present",
+              "is_correct": true,
+              "reason": "The report explicitly notes absence of SRF (no hyporeflective subretinal space) and absence of IRF (no intraretinal cystoid spaces), indicating no exudation on this scan."
+            },
+            {
+              "id": "B",
+              "text": "SRF is present but IRF is absent",
+              "is_correct": false,
+              "reason": "No subretinal hyporeflective space separating the neurosensory retina from the RPE is described."
+            },
+            {
+              "id": "C",
+              "text": "IRF is present but SRF is absent",
+              "is_correct": false,
+              "reason": "No intraretinal cystoid hyporeflective spaces are described."
+            },
+            {
+              "id": "D",
+              "text": "Both SRF and IRF are present",
+              "is_correct": false,
+              "reason": "The scan is characterized as non-exudative with no detected SRF/IRF."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question_type": "single",
+          "question_text": "Based on the OCT findings (small-to-medium drusen with mild confluence and a drusenoid PED, without SRF/IRF or SHRM), what is the most appropriate AMD stage for this eye on this scan?",
+          "difficulty": "intermediate",
+          "topic": "AMD staging",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Early AMD",
+              "is_correct": false,
+              "reason": "Early AMD is typically characterized by small drusen without extensive medium drusen burden or drusenoid PED; a drusenoid PED generally indicates more than early disease."
+            },
+            {
+              "id": "B",
+              "text": "Intermediate (non-exudative) AMD",
+              "is_correct": true,
+              "reason": "Intermediate AMD is supported by medium drusen and/or drusenoid PED in the absence of exudation (no SRF/IRF) and without definitive geographic atrophy or neovascular features."
+            },
+            {
+              "id": "C",
+              "text": "Late dry AMD (geographic atrophy/cRORA)",
+              "is_correct": false,
+              "reason": "Late dry AMD requires definite atrophy (e.g., cRORA with outer retinal/RPE loss and marked hypertransmission), which is not present here."
+            },
+            {
+              "id": "D",
+              "text": "Late wet AMD (neovascular AMD)",
+              "is_correct": false,
+              "reason": "Neovascular AMD is typically associated with exudation (SRF/IRF), SHRM, or fibrovascular PED; these are not identified on this B-scan."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question_type": "multiple",
+          "question_text": "Which OCT findings in this report argue AGAINST active neovascular (exudative) AMD on this single B-scan? (Select ALL that apply.)",
+          "difficulty": "intermediate",
+          "topic": "differential diagnosis",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Absence of subretinal fluid (SRF)",
+              "is_correct": true,
+              "reason": "SRF is a common exudative sign of neovascular activity; its absence reduces the likelihood of active exudation on this scan (though occult CNV can exist without fluid)."
+            },
+            {
+              "id": "B",
+              "text": "Absence of intraretinal fluid (IRF)",
+              "is_correct": true,
+              "reason": "IRF/cystoid spaces are strongly associated with active exudation in neovascular AMD; absence argues against active leakage."
+            },
+            {
+              "id": "C",
+              "text": "Absence of subretinal hyperreflective material (SHRM)",
+              "is_correct": true,
+              "reason": "SHRM (e.g., neovascular tissue, hemorrhage, fibrin) often accompanies type 2 CNV or active exudative disease; its absence makes active neovascular AMD less likely."
+            },
+            {
+              "id": "D",
+              "text": "PED described as broad and shallow with heterogeneous sub-RPE reflectivity consistent with drusenoid material",
+              "is_correct": true,
+              "reason": "A drusenoid PED is a non-exudative lesion; while CNV can develop over time, this morphology without notching/irregularity or exudation is less suggestive of fibrovascular PED."
+            },
+            {
+              "id": "E",
+              "text": "Mild focal hypertransmission beneath some RPE elevations",
+              "is_correct": false,
+              "reason": "Hypertransmission can be seen with RPE disturbance or early atrophic change and does not specifically argue against CNV; it is not a reliable discriminator for exudation by itself."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question_type": "single",
+          "question_text": "Which additional test is most helpful to detect subclinical macular neovascularization in an eye with drusen/drusenoid PED but no SRF/IRF on structural OCT?",
+          "difficulty": "intermediate",
+          "topic": "clinical management",
+          "choices": [
+            {
+              "id": "A",
+              "text": "OCT angiography (OCTA)",
+              "is_correct": true,
+              "reason": "OCTA can identify flow in a neovascular network (subclinical MNV) even when there is no exudation on structural OCT."
+            },
+            {
+              "id": "B",
+              "text": "Amsler grid testing alone",
+              "is_correct": false,
+              "reason": "Amsler grid can detect symptomatic metamorphopsia but cannot directly identify subclinical neovascularization."
+            },
+            {
+              "id": "C",
+              "text": "B-scan ultrasonography",
+              "is_correct": false,
+              "reason": "Ultrasound is not useful for detecting macular neovascularization or drusen-level pathology."
+            },
+            {
+              "id": "D",
+              "text": "Gonioscopy",
+              "is_correct": false,
+              "reason": "Gonioscopy evaluates the anterior chamber angle and is unrelated to macular neovascularization assessment."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question_type": "single",
+          "question_text": "Which OCT feature would be MOST supportive of complete RPE and outer retinal atrophy (cRORA) if it were present?",
+          "difficulty": "advanced",
+          "topic": "RPE atrophy/hypertransmission",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A large, well-demarcated column of hypertransmission into the choroid with overlying loss of the RPE band and outer retinal layers (including ellipsoid zone)",
+              "is_correct": true,
+              "reason": "cRORA is characterized by definite RPE loss, outer retinal atrophy, and prominent hypertransmission into the choroid in a well-defined area."
+            },
+            {
+              "id": "B",
+              "text": "A broad, shallow RPE elevation with heterogeneous sub-RPE reflectivity",
+              "is_correct": false,
+              "reason": "This describes a drusenoid PED, not atrophy. Atrophy implies tissue loss rather than elevation."
+            },
+            {
+              "id": "C",
+              "text": "A thin epiretinal membrane with retinal surface wrinkling",
+              "is_correct": false,
+              "reason": "An epiretinal membrane is a vitreomacular interface abnormality and does not define cRORA."
+            },
+            {
+              "id": "D",
+              "text": "Isolated mild focal hypertransmission beneath an intact-appearing outer retina on a noisy scan",
+              "is_correct": false,
+              "reason": "Mild hypertransmission alone, especially with limited image quality and preserved outer retinal bands, is insufficient to diagnose cRORA."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question_type": "multiple",
+          "question_text": "Which OCT characteristics would favor a fibrovascular PED over a drusenoid PED? (Select ALL that apply.)",
+          "difficulty": "advanced",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Irregular or notched PED contour",
+              "is_correct": true,
+              "reason": "A notched/irregular PED contour is a classic clue for fibrovascular tissue and is more suggestive of neovascular AMD than a smooth drusenoid elevation."
+            },
+            {
+              "id": "B",
+              "text": "Associated subretinal and/or intraretinal fluid",
+              "is_correct": true,
+              "reason": "Exudation (SRF/IRF) strongly supports active neovascular disease and is commonly seen with fibrovascular PED."
+            },
+            {
+              "id": "C",
+              "text": "Subretinal hyperreflective material (SHRM) adjacent to the PED",
+              "is_correct": true,
+              "reason": "SHRM may represent neovascular tissue, fibrin, or hemorrhage and often accompanies neovascular AMD with fibrovascular PED."
+            },
+            {
+              "id": "D",
+              "text": "Optically clear, homogeneous sub-RPE space without internal reflectivity",
+              "is_correct": false,
+              "reason": "An optically clear sub-RPE space is more typical of a serous PED rather than fibrovascular PED."
+            },
+            {
+              "id": "E",
+              "text": "Broad, shallow elevation with granular/heterogeneous internal reflectivity consistent with drusenoid material and no exudation",
+              "is_correct": false,
+              "reason": "This description fits drusenoid PED (non-exudative) rather than fibrovascular PED."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question_type": "single",
+          "question_text": "A patient with these OCT findings (intermediate non-exudative AMD with drusenoid PED and no fluid) asks about management. Which is the most appropriate recommendation?",
+          "difficulty": "intermediate",
+          "topic": "clinical management",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Initiate intravitreal anti-VEGF injections immediately",
+              "is_correct": false,
+              "reason": "Anti-VEGF is indicated for neovascular (exudative) AMD; this scan shows no SRF/IRF/SHRM to support active exudation."
+            },
+            {
+              "id": "B",
+              "text": "AREDS2 supplementation and routine monitoring with education on symptoms of conversion",
+              "is_correct": true,
+              "reason": "Intermediate AMD is an established indication for AREDS2 formulation (if no contraindications) and monitoring for progression or conversion to neovascular AMD."
+            },
+            {
+              "id": "C",
+              "text": "Urgent pars plana vitrectomy",
+              "is_correct": false,
+              "reason": "There is no vitreomacular traction, macular hole, or other surgical indication described."
+            },
+            {
+              "id": "D",
+              "text": "Topical corticosteroids to reduce retinal swelling",
+              "is_correct": false,
+              "reason": "There is no retinal edema (no IRF/SRF), and topical steroids are not a treatment for AMD."
+            },
+            {
+              "id": "E",
+              "text": "Observation only with no follow-up because there is no fluid",
+              "is_correct": false,
+              "reason": "Intermediate AMD carries risk of progression to late AMD; follow-up and patient education are important even in the absence of fluid."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question_type": "single",
+          "question_text": "The extracted label lists the AMD stage as “LateWet,” but the structural OCT report describes non-exudative findings. Which interpretation is most appropriate?",
+          "difficulty": "advanced",
+          "topic": "clinical reasoning/quality control",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The OCT findings are more consistent with intermediate non-exudative AMD; “LateWet” is likely a misclassification without supporting exudative biomarkers",
+              "is_correct": true,
+              "reason": "Late wet AMD generally requires evidence of macular neovascularization with exudation (SRF/IRF), SHRM, or fibrovascular PED; the report explicitly notes these are absent, so the structural OCT supports non-exudative disease on this scan."
+            },
+            {
+              "id": "B",
+              "text": "Any PED automatically indicates late wet AMD, even without fluid",
+              "is_correct": false,
+              "reason": "PEDs occur in non-exudative AMD (drusenoid PED) and do not alone establish neovascular AMD."
+            },
+            {
+              "id": "C",
+              "text": "Mild focal hypertransmission is diagnostic of neovascular AMD",
+              "is_correct": false,
+              "reason": "Hypertransmission is more related to RPE disturbance/atrophy and is not diagnostic of neovascularization."
+            },
+            {
+              "id": "D",
+              "text": "Fair image quality means AMD staging is impossible and no conclusion should be made",
+              "is_correct": false,
+              "reason": "While fair quality reduces confidence for subtle findings, major exudative signs (SRF/IRF/SHRM) can often still be assessed; the scan remains interpretable for key staging elements."
+            },
+            {
+              "id": "E",
+              "text": "The presence of small-to-medium drusen excludes AMD entirely",
+              "is_correct": false,
+              "reason": "Drusen are a hallmark of AMD (though they can be seen in other entities); their presence certainly does not exclude AMD."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "generated_at": "2026-02-02T12:33:21.618667",
+        "model": "gpt-5.2",
+        "question_count": 10
+      }
+    },
+    {
+      "image_id": "27-16758496-25-JPNECXBLXMUGTBJDLYTCYZCVL+XHRQKPBFV",
+      "image_file": "image_017.png",
+      "image_path_original": "dataset/processed_images/27-16758496-25-JPNECXBLXMUGTBJDLYTCYZCVL+XHRQKPBFVZTCGPETPFUDEIJVMZWFWOGKJCJEU+XHBYGP.png",
+      "amd_stage": "LateWet",
+      "biomarkers": [
+        "hypertransmission",
+        "drusenoid PED",
+        "iRORA",
+        "medium drusen",
+        "subretinal fluid",
+        "intraretinal fluid",
+        "RPE elevation",
+        "subretinal hyperreflective material",
+        "PED",
+        "hyperreflective foci",
+        "cRORA"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question_type": "single",
+          "question_text": "Which OCT finding best describes the dominant abnormality in this macular B-scan?",
+          "difficulty": "basic",
+          "topic": "drusen",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Small–medium sub-RPE drusen causing irregular elevations of the RPE/Bruch’s membrane complex",
+              "is_correct": true,
+              "reason": "The report describes predominantly small to medium, non-confluent drusen located sub-RPE with irregular RPE undulations/elevations along the RPE/Bruch’s complex."
+            },
+            {
+              "id": "B",
+              "text": "Subretinal fluid (SRF) consistent with active exudation",
+              "is_correct": false,
+              "reason": "SRF is specifically reported as absent; there is no hyporeflective space between the neurosensory retina and RPE."
+            },
+            {
+              "id": "C",
+              "text": "Intraretinal cystoid spaces consistent with intraretinal fluid (IRF)",
+              "is_correct": false,
+              "reason": "IRF is reported as absent; no cystoid hyporeflective intraretinal spaces are described."
+            },
+            {
+              "id": "D",
+              "text": "Subretinal hyperreflective material (SHRM) suggesting neovascular tissue",
+              "is_correct": false,
+              "reason": "SHRM is reported as absent on this scan; no hyperreflective material in the subretinal space is described."
+            },
+            {
+              "id": "E",
+              "text": "Complete RPE and outer retinal atrophy (cRORA)",
+              "is_correct": false,
+              "reason": "No cRORA is present; the RPE band is largely continuous and there is no marked hypertransmission with outer retinal collapse."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question_type": "single",
+          "question_text": "What type of pigment epithelial detachment (PED) is most consistent with the described OCT morphology?",
+          "difficulty": "basic",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Drusenoid PED",
+              "is_correct": true,
+              "reason": "The scan shows irregular, shallow RPE undulations/elevations associated with drusen—typical of drusenoid PED rather than a smooth dome."
+            },
+            {
+              "id": "B",
+              "text": "Serous PED",
+              "is_correct": false,
+              "reason": "Serous PED is classically a smooth, dome-shaped RPE elevation with optically clear sub-RPE space; the report emphasizes irregular undulations instead."
+            },
+            {
+              "id": "C",
+              "text": "Fibrovascular PED",
+              "is_correct": false,
+              "reason": "Fibrovascular PED often shows heterogeneous internal reflectivity and is frequently associated with exudation (SRF/IRF) or SHRM; none are described, and the report states no convincing fibrovascular features on this B-scan."
+            },
+            {
+              "id": "D",
+              "text": "Hemorrhagic PED",
+              "is_correct": false,
+              "reason": "Hemorrhagic PED would show hyperreflective material consistent with blood and is typically associated with neovascular AMD; such findings are not reported."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question_type": "single",
+          "question_text": "Which statement best characterizes fluid status on this OCT scan?",
+          "difficulty": "basic",
+          "topic": "fluid assessment",
+          "choices": [
+            {
+              "id": "A",
+              "text": "No SRF or IRF is present; the scan shows no exudative activity",
+              "is_correct": true,
+              "reason": "The report explicitly states SRF absent and IRF absent, with overall no exudation detected."
+            },
+            {
+              "id": "B",
+              "text": "SRF is present but IRF is absent",
+              "is_correct": false,
+              "reason": "SRF is described as absent; there is no subretinal hyporeflective space."
+            },
+            {
+              "id": "C",
+              "text": "IRF is present but SRF is absent",
+              "is_correct": false,
+              "reason": "IRF is described as absent; there are no intraretinal cystoid spaces."
+            },
+            {
+              "id": "D",
+              "text": "Both SRF and IRF are present, consistent with active CNV",
+              "is_correct": false,
+              "reason": "Neither SRF nor IRF is present on this scan, and no SHRM is described to support active neovascularization."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question_type": "single",
+          "question_text": "Based on the OCT findings (small–medium drusen with drusenoid PED, preserved outer retina, no SRF/IRF, no definite atrophy), what is the most appropriate AMD stage classification for THIS B-scan?",
+          "difficulty": "intermediate",
+          "topic": "AMD staging",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Early AMD",
+              "is_correct": false,
+              "reason": "Early AMD typically features small drusen (<63 μm) with minimal pigmentary change; the presence of medium drusen/drusenoid PED favors a more advanced non-exudative stage."
+            },
+            {
+              "id": "B",
+              "text": "Intermediate non-exudative (dry) AMD",
+              "is_correct": true,
+              "reason": "Medium drusen and drusenoid PED without fluid or definite atrophy are classic for intermediate non-exudative AMD."
+            },
+            {
+              "id": "C",
+              "text": "Late dry AMD (geographic atrophy/cRORA)",
+              "is_correct": false,
+              "reason": "Late dry AMD requires established atrophy (e.g., cRORA with marked hypertransmission and outer retinal/RPE loss), which is not present."
+            },
+            {
+              "id": "D",
+              "text": "Late wet AMD (exudative neovascular AMD)",
+              "is_correct": false,
+              "reason": "Exudative AMD typically demonstrates SRF/IRF, SHRM, or fibrovascular PED features; these are absent on this scan."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question_type": "multiple",
+          "question_text": "Which OCT features in this report argue AGAINST active neovascular (exudative) AMD on this single B-scan? (Select all that apply.)",
+          "difficulty": "intermediate",
+          "topic": "clinical significance",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Absence of subretinal fluid (SRF)",
+              "is_correct": true,
+              "reason": "SRF is a common exudative sign of active macular neovascularization; its absence reduces suspicion for active exudation on this scan."
+            },
+            {
+              "id": "B",
+              "text": "Absence of intraretinal fluid (IRF)",
+              "is_correct": true,
+              "reason": "IRF (cystoid spaces) is a strong marker of exudative activity and often correlates with vision loss; it is absent here."
+            },
+            {
+              "id": "C",
+              "text": "Absence of subretinal hyperreflective material (SHRM)",
+              "is_correct": true,
+              "reason": "SHRM can represent neovascular tissue, fibrin, hemorrhage, or scar and often accompanies neovascular AMD; it is reported absent."
+            },
+            {
+              "id": "D",
+              "text": "No definite fibrovascular PED features described",
+              "is_correct": true,
+              "reason": "Fibrovascular PED is often associated with macular neovascularization; the report notes no convincing fibrovascular PED features on this B-scan."
+            },
+            {
+              "id": "E",
+              "text": "Presence of mild focal hypertransmission beneath some RPE irregularities",
+              "is_correct": false,
+              "reason": "Mild focal hypertransmission can occur with RPE irregularity or early degeneration and does not, by itself, exclude or confirm neovascular activity."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question_type": "single",
+          "question_text": "The report notes mild, focal choroidal hypertransmission beneath some RPE irregularities without clear atrophy. What is the best interpretation of this finding?",
+          "difficulty": "intermediate",
+          "topic": "RPE changes",
+          "choices": [
+            {
+              "id": "A",
+              "text": "It is compatible with focal RPE disturbance/thinning over drusen but does not meet criteria for established cRORA",
+              "is_correct": true,
+              "reason": "Marked hypertransmission with overlying RPE and outer retinal loss would suggest cRORA; mild focal hypertransmission can be seen with RPE irregularity over drusen without complete atrophy."
+            },
+            {
+              "id": "B",
+              "text": "It is diagnostic of complete RPE and outer retinal atrophy (cRORA)",
+              "is_correct": false,
+              "reason": "cRORA requires clear evidence of RPE loss and outer retinal atrophy with prominent hypertransmission; the report explicitly states no cRORA."
+            },
+            {
+              "id": "C",
+              "text": "It confirms active choroidal neovascularization requiring immediate anti-VEGF therapy",
+              "is_correct": false,
+              "reason": "Hypertransmission alone does not confirm neovascular activity; key exudative signs (SRF/IRF/SHRM) are absent."
+            },
+            {
+              "id": "D",
+              "text": "It indicates epiretinal membrane traction with inner retinal thickening",
+              "is_correct": false,
+              "reason": "Hypertransmission is an outer retinal/RPE-choroid signal phenomenon; ERM traction primarily affects the inner retina and retinal surface contour."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question_type": "single",
+          "question_text": "Which additional imaging modality is most helpful to detect subclinical (non-exudative) macular neovascularization in an eye with intermediate dry AMD and a drusenoid PED but no SRF/IRF on structural OCT?",
+          "difficulty": "advanced",
+          "topic": "clinical management",
+          "choices": [
+            {
+              "id": "A",
+              "text": "OCT angiography (OCTA)",
+              "is_correct": true,
+              "reason": "OCTA can identify flow within a neovascular network even before exudation appears on structural OCT, helping detect subclinical MNV."
+            },
+            {
+              "id": "B",
+              "text": "B-scan ultrasonography",
+              "is_correct": false,
+              "reason": "Ultrasound is not sensitive for macular neovascular networks or subtle outer retinal/RPE changes in AMD."
+            },
+            {
+              "id": "C",
+              "text": "Gonioscopy",
+              "is_correct": false,
+              "reason": "Gonioscopy assesses the anterior chamber angle and is unrelated to macular neovascularization."
+            },
+            {
+              "id": "D",
+              "text": "Specular microscopy",
+              "is_correct": false,
+              "reason": "Specular microscopy evaluates corneal endothelium, not macular pathology."
+            },
+            {
+              "id": "E",
+              "text": "Amsler grid testing alone",
+              "is_correct": false,
+              "reason": "Amsler grid can screen for metamorphopsia but cannot identify subclinical neovascular flow or characterize PED type."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question_type": "multiple",
+          "question_text": "Which OCT criteria would be expected if this patient progressed from the current state to incomplete RPE and outer retinal atrophy (iRORA) or complete RPE and outer retinal atrophy (cRORA)? (Select all that apply.)",
+          "difficulty": "advanced",
+          "topic": "atrophy markers",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Increased choroidal hypertransmission beneath the affected area",
+              "is_correct": true,
+              "reason": "Progressive RPE attenuation/loss allows more OCT signal to pass into the choroid, producing increased hypertransmission—an atrophy marker."
+            },
+            {
+              "id": "B",
+              "text": "Thinning/disruption of outer retinal bands (e.g., ellipsoid zone) over the lesion",
+              "is_correct": true,
+              "reason": "Outer retinal degeneration (photoreceptor loss) is part of the iRORA/cRORA spectrum and accompanies RPE compromise."
+            },
+            {
+              "id": "C",
+              "text": "Definite RPE loss with a well-demarcated atrophic zone (for cRORA)",
+              "is_correct": true,
+              "reason": "cRORA requires unequivocal RPE loss (not merely irregularity) with corresponding outer retinal atrophy and prominent hypertransmission."
+            },
+            {
+              "id": "D",
+              "text": "New intraretinal cystoid spaces (IRF) as a defining criterion of cRORA",
+              "is_correct": false,
+              "reason": "IRF is an exudative sign more suggestive of neovascular activity; it is not a defining criterion for iRORA/cRORA."
+            },
+            {
+              "id": "E",
+              "text": "Subretinal hyperreflective material (SHRM) as a defining criterion of iRORA",
+              "is_correct": false,
+              "reason": "SHRM suggests neovascular complex, fibrin, hemorrhage, or scar; it is not required to diagnose iRORA and may indicate a different (exudative) pathway."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question_type": "single",
+          "question_text": "Which OCT feature would most strongly shift the diagnosis from drusenoid PED to fibrovascular PED in AMD?",
+          "difficulty": "intermediate",
+          "topic": "PED types",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Heterogeneous internal reflectivity within the PED with associated SRF/IRF and/or SHRM",
+              "is_correct": true,
+              "reason": "Fibrovascular PED typically appears irregular with heterogeneous reflectivity and is commonly accompanied by exudation (SRF/IRF) and/or SHRM due to macular neovascularization."
+            },
+            {
+              "id": "B",
+              "text": "Smooth dome-shaped elevation with optically clear sub-RPE space and no exudation",
+              "is_correct": false,
+              "reason": "This description fits a serous PED rather than fibrovascular PED."
+            },
+            {
+              "id": "C",
+              "text": "Multiple small sub-RPE elevations that are non-confluent",
+              "is_correct": false,
+              "reason": "This is more consistent with drusen/drusenoid RPE elevations and does not specifically indicate fibrovascular tissue."
+            },
+            {
+              "id": "D",
+              "text": "Mild focal hypertransmission beneath RPE undulations without retinal fluid",
+              "is_correct": false,
+              "reason": "Mild hypertransmission can occur with RPE irregularity over drusen and is not a strong discriminator for fibrovascular PED."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question_type": "single",
+          "question_text": "In the differential diagnosis of sub-RPE elevations on OCT, which condition most classically shows pachychoroid features (thick choroid, pachyvessels) and may present with shallow irregular PEDs that can mimic AMD?",
+          "difficulty": "advanced",
+          "topic": "differential diagnosis",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Pachychoroid neovasculopathy / chronic central serous chorioretinopathy spectrum",
+              "is_correct": true,
+              "reason": "Pachychoroid spectrum disease can show shallow irregular PEDs and type 1 neovascularization with a thickened choroid and pachyvessels, potentially mimicking AMD—especially in younger patients or those with pachychoroid phenotype."
+            },
+            {
+              "id": "B",
+              "text": "Retinitis pigmentosa",
+              "is_correct": false,
+              "reason": "Retinitis pigmentosa primarily causes outer retinal degeneration with characteristic peripheral changes and does not typically present as sub-RPE drusen-like elevations."
+            },
+            {
+              "id": "C",
+              "text": "Optic neuritis",
+              "is_correct": false,
+              "reason": "Optic neuritis affects the optic nerve and does not cause macular sub-RPE elevations or PEDs on OCT."
+            },
+            {
+              "id": "D",
+              "text": "Diabetic macular edema",
+              "is_correct": false,
+              "reason": "DME is characterized by intraretinal cysts, retinal thickening, and sometimes SRF; it does not typically cause primary sub-RPE drusen/PED morphology."
+            },
+            {
+              "id": "E",
+              "text": "Branch retinal vein occlusion",
+              "is_correct": false,
+              "reason": "BRVO-related macular edema produces intraretinal fluid and hemorrhages along a venous distribution rather than sub-RPE drusen/drusenoid PED."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "generated_at": "2026-02-02T12:35:18.917581",
+        "model": "gpt-5.2",
+        "question_count": 10
+      }
+    }
+  ]
+}
