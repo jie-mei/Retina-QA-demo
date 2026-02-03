@@ -1,9 +1,9 @@
 /**
- * Retina OCT Quiz Application
+ * Eyecapture Application
  * Professional medical quiz for AMD assessment training
  */
 
-class RetinaQuiz {
+class EyecaptureQuiz {
     constructor() {
         // State
         this.questions = [];
@@ -630,5 +630,5 @@ class RetinaQuiz {
 
 // Initialize the quiz when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    window.quiz = new RetinaQuiz();
+    window.quiz = new EyecaptureQuiz();
 });
